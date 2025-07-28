@@ -52,7 +52,6 @@ A modern ASP.NET Core MVC web app for user registration and login, built using *
 
 
 
-'''
 ⚙️ Getting Started
 Follow these steps to run the project locally:
 
