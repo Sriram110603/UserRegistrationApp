@@ -28,6 +28,49 @@ A modern ASP.NET Core MVC web app for user registration and login, built using *
 
 ---
 
+⚙️ Getting Started
+Follow these steps to run the project locally:
+
+🧱 Prerequisites
+.NET 8 SDK
+
+SQL Server / LocalDB
+
+Visual Studio 2022+
+
+🔧 Setup Instructions
+Clone the repository
+
+git clone https://github.com/Sriram110603/UserRegistrationApp.git
+
+cd UserRegistrationApp
+
+
+Update DB connection string in appsettings.json
+
+
+
+"ConnectionStrings": {
+  "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=UserAppDb;Trusted_Connection=True;"
+}
+
+
+Build & Run the app
+dotnet build
+
+
+dotnet run
+
+Visit the site
+https://localhost:7027
+
+
+🧪 Database Setup
+This project follows the Database-First approach using an existing SQL Server DB.
+
+
+⚠️ Ensure that the UserAppDb database exists with the required tables (User, etc.).
+
 ## 📁 Project Structure
 
 ```plaintext
@@ -49,56 +92,3 @@ A modern ASP.NET Core MVC web app for user registration and login, built using *
 ├── appsettings.json
 ├── Program.cs
 └── UserRegistrationApp.csproj
-
-
-
-⚙️ Getting Started
-Follow these steps to run the project locally:
-
-🧱 Prerequisites
-.NET 8 SDK
-
-SQL Server / LocalDB
-
-Visual Studio 2022+
-
-🔧 Setup Instructions
-Clone the repository
-
-bash
-Copy
-Edit
-git clone https://github.com/Sriram110603/UserRegistrationApp.git
-cd UserRegistrationApp
-Update DB connection string in appsettings.json
-
-json
-Copy
-Edit
-"ConnectionStrings": {
-  "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=UserAppDb;Trusted_Connection=True;"
-}
-Build & Run the app
-
-bash
-Copy
-Edit
-dotnet build
-dotnet run
-Visit the site
-https://localhost:7027
-🧪 Database Setup
-This project follows the Database-First approach using an existing SQL Server DB.
-dotnet ef dbcontext scaffold "YourConnectionString" Microsoft.EntityFrameworkCore.SqlServer -o Models
-⚠️ Ensure that the UserAppDb database exists with the required tables (User, etc.).
-
-
-🤝 Contributing
-Contributions, issues, and feature requests are welcome!
-If you'd like to add features or fix bugs, please open a pull request or raise an issue.
-
-📄 License
-Licensed under the MIT License.
-
-👋 Connect with Me
-Made with ❤️ by Sriram
